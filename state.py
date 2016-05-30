@@ -25,6 +25,8 @@ class GameState(State):
     def __init__(self, surface):
         State.__init__(self, surface)
 
+        self.mole = mole.Mole((100, 100))
+
     def handle(self, evt):
         pass
 
@@ -32,4 +34,4 @@ class GameState(State):
         pass
 
     def draw(self):
-        pass
+        self.mole.draw(self.surface)
