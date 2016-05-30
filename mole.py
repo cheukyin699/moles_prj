@@ -4,6 +4,7 @@ class Mole(pygame.sprite.Sprite):
     def __init__(self, (x, y)):
         pygame.sprite.Sprite.__init__(self)
 
+        # Scale to 50x50
         self.image = pygame.transform.scale(pygame.image.load('res/mole.png'),
                                             (50, 50))
 
