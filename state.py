@@ -1,4 +1,5 @@
-
+import player
+import mole
 
 class State:
     '''
